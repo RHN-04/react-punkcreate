@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('/public/fonts/lato_regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('/public/fonts/lato_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/public/fonts/lato_regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/lato_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/public/fonts/lato_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/public/fonts/lato_regular.svg#lato_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+font-family: 'Muller ExtraBold DEMO';
+src: url('/public/fonts/muller_extrabold_demo.eot'); /* IE 9 Compatibility Mode */
+src: url('/public/fonts/muller_extrabold_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('/public/fonts/muller_extrabold_demo.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/public/fonts/muller_extrabold_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('/public/fonts/muller_extrabold_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/public/fonts/muller_extrabold_demo.svg#muller_extrabold_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.post-preview {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.post-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+.author-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-info-container {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.author-info-container img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 280px;
+  height: 280px; 
+}
+
+
+.author-info-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-info-details h2 {
+  margin-bottom: 5px;
+  font-size: 40px;
+  font-family: 'Muller ExtraBold DEMO';
+  color: #df0238; 
+}
+
+.author-info-details p {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Lato Regular'; 
+  color: #990036; 
+}
+
+.author-info-stats {
+  margin-top: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-button {
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 25px;
+}
+
+.unfollow-button {
+  background-color: #990036;
+  color: #100031;
+  border: none;
+  padding: 8px 16px;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 25px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.tab-button.active {
+  background-color: #990036;
+}
+
+.edit-profile-button {
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 25px;
+  margin-right: 10px; 
+}
+

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-left: 15px;
+  gap: 8px; 
+  justify-content: center;
+}
+
+.post-preview {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.post-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.pagination-container {
+  margin: 15px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #990036;
+}
+
+.pagination button:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+  border: 2px;
+  border-color: #990036;
+  color: #990036;
+}

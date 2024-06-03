@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Muller ExtraBold DEMO';
+	src: url('/public/fonts/muller_extrabold_demo.eot'); /* IE 9 Compatibility Mode */
+	src: url('/public/fonts/muller_extrabold_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/public/fonts/muller_extrabold_demo.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/public/fonts/muller_extrabold_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/public/fonts/muller_extrabold_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/public/fonts/muller_extrabold_demo.svg#muller_extrabold_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; 
+    width: 180px;
+    height: 100%;
+    background-color: #100031;
+    transition: width 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 20px;
+    padding-top: 10px;
+    z-index: 2;
+  }
+  
+  .sidebar a {
+    font-family: 'Muller ExtraBold DEMO';
+    font-size: 17px;
+    color: #990036;
+    text-decoration: none;
+    margin: 5px 0; 
+  }
+
+  .sidebar a:hover {
+    color: #df0238;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .logout-button {
+    background-color: #df0238;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+

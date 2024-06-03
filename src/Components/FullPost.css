@@ -1,0 +1,309 @@
+.full-post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+.left-block {
+  flex: 1 1 70%;
+  margin-bottom: 20px;
+}
+
+.right-block {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.left-block img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.title1,
+.author1,
+.description,
+.tags {
+  margin-bottom: 10px;
+}
+
+.title1 {
+  text-align: left;
+  color: #990036;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 2rem; 
+}
+
+.author1 {
+  text-align: left;
+  text-decoration: none;
+  color: #df0238;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 2.2rem; 
+}
+
+.author1:hover {
+  color: hsl(339, 100%, 30%);
+}
+
+.description {
+  color: #990036;
+  font-family: 'Lato Regular';
+  font-size: 1.875rem;
+}
+
+.tags {
+  font-family: 'Lato Regular';
+  color: #df0238;
+}
+
+.comment-form {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-input {
+  flex: 1;
+  border: 2px solid #990036;
+  background: none;
+  padding: 5px;
+  color: #df0238;
+  margin-right: 10px; 
+}
+
+.comment-button {
+  padding: 10px;
+  background-color: #100031;
+  color: #df0238;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato Regular';
+  font-weight: bold;
+}
+
+.comment-button:hover {
+  background-color: #df0238;
+  color: #100031;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #df0238;
+}
+
+.comment-input::placeholder {
+  color: #990036;
+}
+
+.tags {
+  font-family: 'Lato Regular';
+  font-size: 1.563rem; 
+  color: #df0238;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #df0238;
+}
+
+.slick-dots {
+  bottom: -15px;
+}
+
+.slick-dots li {
+  margin: 0 4px;
+}
+
+.slick-dots li button:before {
+  color: #df0238 !important;
+}
+
+.dropdown-menu-container {
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown-button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  font-family: "Lato Regular";
+  font-weight: bold;
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 5px 0;
+  min-width: 150px;
+}
+
+.dropdown-menu-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  color: #100031;
+  background-color: #df0238;
+  font-family: 'Lato Regular';
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #990036;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: #df0238;
+  color: #100031;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-family: Lato Regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tag:hover {
+  background-color: #990036;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.slider-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.nsfw-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 10px;
+  color: #df0238;
+  font-family: 'Muller ExtraBold DEMO';
+  font-size: 1.563rem;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.nsfw-post button {
+  background-color: #df0238;
+  color: #100031;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: 'Lato Regular';
+  font-weight: bold;
+  font-size: 1.563rem;
+  margin-top: 15px;
+}
+
+.nsfw-post button:hover {
+  background-color: #990036;
+}
+
+
+.nsfw-post button:hover {
+  background-color: #990036;
+}
+
+.right-block .likes-comments {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column; 
+}
+
+.right-block .like-button {
+  background-color: #100031;
+  color: #df0238;
+  border: none;
+  font-family: 'Lato Regular';
+  font-size: 1rem; 
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%; 
+}
+
+.right-block .like-button.active {
+  background-color: #df0238;
+  color: #100031;
+}
+
+.right-block .likes-comments span {
+  margin-bottom: 10px;
+}
+
+.comments-sign {
+  font-family: 'Muller ExtraBold DEMO';
+  color: #df0238;
+  font-size: 1.563rem; 
+}
+
+.comments-section {
+  margin-bottom: 20px;
+}
+
+.comment-item {
+  margin-bottom: 10px;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #df0238;
+  text-decoration: none;
+}
+
+.comment-author:hover {
+  text-decoration: underline;
+}
+
+.no-comments {
+  font-family: 'Lato Regular';
+  color: #df0238;
+  font-weight: bold;
+}

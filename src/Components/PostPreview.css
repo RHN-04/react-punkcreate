@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('/public/fonts/lato_regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('/public/fonts/lato_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('/public/fonts/lato_regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/public/fonts/lato_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('/public/fonts/lato_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/public/fonts/lato_regular.svg#lato_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.post-preview {
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+    aspect-ratio: 1;
+}
+
+.post-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(16, 0, 49, 0.9);
+    transform: translateY(120%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 6px; 
+    margin-bottom: 10px;
+}
+
+.post-preview:hover .info-overlay {
+    transform: translateY(0);
+}
+
+
+.author-link,
+.title,
+.likes-comments,
+.date {
+    text-align: center;
+    font-family: 'Lato Regular'; 
+    font-size: 17px; 
+    font-weight: bold;
+    color: #df0238;
+}
+
+.author-link {
+    text-decoration: none;
+    color: #df0238;
+}
+
+.author:hover {
+    text-decoration: none;
+    color: #990036;
+}
+
+
+.likes-comments {
+    display: flex;
+    justify-content: center; 
+    gap: 8px; 
+}
+
+.date {
+    margin-top: 4px; 
+}
+
+.post-preview.nsfw .nsfw-warning {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;  
+    height: 100%;
+}
+
+.post-preview.nsfw .nsfw-warning p {
+    color: #df0238;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato Regular'; 
+    font-weight: bold;
+    margin: auto; 
+    max-width: 80%; 
+    text-decoration: none; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.post-link {
+    text-decoration: none;
+  }
+  
+
+
+  
